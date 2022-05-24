@@ -31,6 +31,7 @@ function handleClickCellClick(e){
             return false;
         }
         handleResultValidation();
+        handleCellPlayed(clickCell,clickedCellIndex);
     }
 }
 function handleResultValidation(){
@@ -87,4 +88,8 @@ function restartGameState(){
     while(i--){
         game_state[i]='';
     }
+}
+function handleCellPlayed(clickedCell,clickedCellIndex){
+    game_state[clickedCellIndex]=currentPlayer;
+    clickedCell.innerHTML=currentPlayer;
 }
