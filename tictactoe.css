@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Roboto:wght@300&display=swap');
+body{
+    font-family: 'Roboto', sans-serif;
+}
+.cell{
+    width: 100px;
+    height: 100px;
+    border: 1px solid black;
+    font-size: 50px;
+    text-align: center;
+    line-height: 100px;
+    background-color: azure;
+    cursor: pointer;
+    box-shadow: 0px 0px 10px black;
+}
+.game-container{
+    display:grid;
+    grid-template-columns: repeat(3, 0fr);
+    grid-template-rows: repeat(3, 0fr);
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
